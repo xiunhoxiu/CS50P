@@ -1,3 +1,5 @@
-name = input("What's your name?: ").strip().title()
+def hello(to):
+    print("hello,", to)
 
-print(f"hello, {name}")  # f = format string.
+name = input("What's your name? ")
+hello(name)
