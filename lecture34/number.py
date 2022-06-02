@@ -7,7 +7,8 @@ def get_int(prompt):
         try:
             return int(input(prompt))
         except ValueError:
-            pass  ## stay in the loop without telling user what's wrong
+            pass  # stay in the loop without telling user what's wrong
 
+# more dynamically and reusable
 
 main()
