@@ -2,7 +2,7 @@
 
 def main():
     name = input("What's your name? ")
-    hello(name)
+    print(hello(name))
 
 def hello(to="world"):
     return f"hello, {to}"
