@@ -1,4 +1,3 @@
-# CS50P lecture 8 - look for source code.
 class Student:
     def __init__(self, name, house):
             self.name = name
