@@ -1,19 +1,17 @@
-balance = 0
+class Account:
+    def __init__(self):
+        self._balance = 0
+    
+    @property
+    def balance(self):
+        return self._balance
+    
+    def deposit(self, n):
+        self._balance += n
+    
+    def withdraw(self, n):
+        self._balance -=n
 
 def main():
-    print("Balance:", balance)
-    deposit(100)
-    withdraw(50)
-    print("New Balance:", balance)
-
-def deposit(n):
-    global balance
-    balance += n
-
-
-def withdraw(n):
-    global balance
-    balance -= n
-
-if __name__ == "__main__":
-    main()
+    account = Account()
+    print("Balance:", account.balance)
