@@ -1,7 +1,6 @@
 balance = 0
 
 def main():
-    balance = 0
     print("Balance:", balance)
     deposit(100)
     withdraw(50)
@@ -12,7 +11,7 @@ def deposit(n):
     balance += n
 
 
-def withdarw(n):
+def withdraw(n):
     global balance
     balance -= n
 
