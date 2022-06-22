@@ -6,4 +6,7 @@ students = [
    {"name": "Padma", "house": "Ravenclaw"} 
 ]
 
-def is_
+gryffindors = filter(lambda s: s["house"] == "Gryffindor", students)
+
+for gryffindor in sorted(gryffindors, key=lambda s: s["name"]):
+    print(gryffindor["name"])
