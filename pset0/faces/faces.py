@@ -15,5 +15,4 @@ def convert(msg):
         output += emojis.get(word, word) + " "
     return print(output)
 
-
 main()
